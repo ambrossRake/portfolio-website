@@ -1,0 +1,11 @@
+<div id="projects-section" class="fluid-container">
+  <div class="row mx-auto">
+    <div class="col-sm-12 text-center">
+      <h1>Featured Projects</h1>
+      <hr>
+      <div class="card-deck">
+        <app-project-card *ngFor="let p of projects" [project]="p"></app-project-card>
+      </div>
+    </div>
+  </div>
+</div>
