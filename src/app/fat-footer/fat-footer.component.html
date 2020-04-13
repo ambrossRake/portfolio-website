@@ -4,7 +4,7 @@
       <img src="../../assets/ijLogo.png" width="150" class="fluid-img">
     </div>
     <div class="col-sm-8 mx-auto">
-      <div class="row">
+      <div class="row my-3">
         <div class="col-sm-6 mx-auto">
           <h2>Explore</h2>
           <hr>
@@ -38,13 +38,18 @@
             </div>
             <div class="col-sm-8">
               <p>Sign up to receive the latest updates on project information and blog posts.</p>
-              <input type="email" placeholder="Email Address"/>
-              <button class="btn btn-primary" type="submit">Sign Up</button>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email Address" style="border-radius:0;"/>
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Sign Up</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <hr>
+      <p class="text-center">Copyright © {{year}} by Isaiah Johnson. All rights reserved.</p>
     </div>
   </div>
 </footer>

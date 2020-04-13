@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fat-footer.component.css']
 })
 export class FatFooterComponent implements OnInit {
-
-  constructor() { }
+  year: number;
+  constructor() {
+    let date: Date = new Date();
+    this.year = date.getFullYear();
+  }
 
   ngOnInit(): void {
   }
