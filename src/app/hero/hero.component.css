@@ -1,0 +1,8 @@
+#hero{
+  color: #FFFFFF;
+  background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(0, 0, 0, .5)), url("https://cdn.pixabay.com/photo/2016/10/12/13/32/office-1734485_1280.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
