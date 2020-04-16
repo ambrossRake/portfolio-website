@@ -9,8 +9,7 @@ pipeline{
     }
     stage('Deploy'){
       steps{
-          bat 'npm install -g angular-cli-ghpages'
-          bat 'npm run ngh'
+          bat 'ngh'
       }
     }
   }
