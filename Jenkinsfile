@@ -5,22 +5,22 @@ pipeline{
     stage('Init'){
       steps{
         withNPM(){
-          npm install
-          npm install -g angular-cli-ghpages
+          sh 'npm install'
+          sh 'npm install -g angular-cli-ghpages'
         }
       }
     }
     stage('Build'){
       steps{
         withNPM(){
-          ng build --no-aot --no-build-optimizer --prod --base-href "/"
+          sh 'ng build --no-aot --no-build-optimizer --prod --base-href /'
         }
       }
     }
     stage('Deploy'){
       steps{
         withNPM(){
-          ngh
+          sh 'ngh'
         }
 
       }
