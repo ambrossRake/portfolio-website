@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        bat 'npm run ng build --no-aot --no-build-optimizer --prod --base-href "/"'
+        bat 'npm run ng -- build --no-aot --no-build-optimizer --prod --base-href=/'
       }
     }
     stage('Deploy'){
