@@ -4,12 +4,13 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-          npm 'ng build --no-aot --no-build-optimizer --prod --base-href /'
+          bat 'npm install'
+          bat 'ng build --no-aot --no-build-optimizer --prod --base-href /'
       }
     }
     stage('Deploy'){
       steps{
-          npm 'ngh'
+          bat 'ngh'
       }
     }
   }
