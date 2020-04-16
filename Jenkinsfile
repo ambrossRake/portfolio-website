@@ -10,13 +10,13 @@ pipeline{
     }
     stage('Build'){
       steps{
-        ng build --no-aot --no-build-optimizer --prod --base-href /
+        ng build --no-aot --no-build-optimizer --prod --base-href "/"
       }
     }
     stage('Deploy'){
-        steps{
-          ngh
-        }
+      steps{
+        ngh
+      }
     }
   }
 
