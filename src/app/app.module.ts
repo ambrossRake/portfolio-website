@@ -10,6 +10,12 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { FatFooterComponent } from './fat-footer/fat-footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeroComponent } from './hero/hero.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { BlogPageComponent } from './blog-page/blog-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { HeroComponent } from './hero/hero.component';
     ProjectCardComponent,
     FatFooterComponent,
     ProjectsComponent,
-    HeroComponent
+    HeroComponent,
+    HomePageComponent,
+    ErrorPageComponent,
+    AboutPageComponent,
+    ProjectsPageComponent,
+    ContactPageComponent,
+    BlogPageComponent
   ],
   imports: [
     BrowserModule,
