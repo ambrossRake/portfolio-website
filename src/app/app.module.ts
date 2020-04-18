@@ -16,6 +16,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
+import { HeroContactFormComponent } from './hero-contact-form/hero-contact-form.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
     AboutPageComponent,
     ProjectsPageComponent,
     ContactPageComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    HeroContactFormComponent
   ],
   imports: [
     BrowserModule,
