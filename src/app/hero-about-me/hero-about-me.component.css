@@ -1,0 +1,26 @@
+#hero{
+  color: #FFFFFF;
+  background-image: linear-gradient(rgba(0,0,0, .8), rgba(0, 0, 0, .1)), url("../../assets/background.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position:relative;
+}
+
+#hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero-content>h1{
+  font-size:5.5em;
+}
+
+
+hr{
+  background: #FFFFFF;
+}

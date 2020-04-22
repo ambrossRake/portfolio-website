@@ -17,6 +17,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { HeroContactFormComponent } from './hero-contact-form/hero-contact-form.component';
+import { HeroAboutMeComponent } from './hero-about-me/hero-about-me.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HeroContactFormComponent } from './hero-contact-form/hero-contact-form.
     ProjectsPageComponent,
     ContactPageComponent,
     BlogPageComponent,
-    HeroContactFormComponent
+    HeroContactFormComponent,
+    HeroAboutMeComponent
   ],
   imports: [
     BrowserModule,
