@@ -3,22 +3,29 @@
   <app-nav-bar></app-nav-bar>
   <div class="row">
     <div class="col-sm-8 mx-auto text-center" id="hero-content">
-      <form autocomplete="on" class="p-3 bg-dark rounded shadow-lg">
-        <label>Contact</label>
+      <form autocomplete="on" class="p-3 rounded shadow-lg">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Name" id="name" required="required">
+          <div class="row">
+            <div class="col-sm-4">
+              <label>Contact</label>
+              <div class="form-group">
+                <input type="text" class="form-control " placeholder="Name" id="name" required="required">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" id="email" required="required">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" id="subject" required="required">
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" placeholder="Type your message here" id="message" rows="5" required="required" ></textarea>
+              <input type="submit" class="btn btn-primary btn-lg float-right mt-4" value="Submit">
+            </div>
+
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" class="form-control" placeholder="Email" id="email" required="required">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Subject" id="subject" required="required">
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea class="form-control" placeholder="Type your message here" id="message" rows="5" required="required" ></textarea>
-        </div>
-        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
       </form>
     </div>
   </div>
