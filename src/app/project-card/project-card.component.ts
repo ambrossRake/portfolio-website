@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Project } from '../shared/models/project.model'
+import { Component, Input } from '@angular/core';
+import { Repository } from '../shared/models/repository.model'
 
 @Component({
   selector: 'app-project-card',
@@ -7,12 +7,9 @@ import { Project } from '../shared/models/project.model'
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent implements OnInit {
-  @Input("project") project: Project;
+  @Input("repository") repository: Repository;
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.project.name);
-  }
 
 }

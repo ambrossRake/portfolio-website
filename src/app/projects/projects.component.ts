@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../rest.service';
-import { Project } from '../shared/models/project.model'
+import { Repository } from '../shared/models/repository.model'
 
 @Component({
   selector: 'app-projects',
@@ -8,13 +8,13 @@ import { Project } from '../shared/models/project.model'
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Project[];
+  repositories: Repository[];
 
   constructor(private restService : RestService) { }
 
   ngOnInit(): void {
-    this.restService.getProjects().subscribe((response) => {
-     this.projects = response
+    this.restService.getRepositories().subscribe((response) => {
+     this.repositories = response
     });
   }
 

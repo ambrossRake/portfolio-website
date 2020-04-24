@@ -1,4 +1,4 @@
-export class Project{
+export class Repository{
 
 
   constructor(private _name: string, private _url: string, private _description: string){}
