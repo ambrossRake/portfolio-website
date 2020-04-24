@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.restService.getRepositories().subscribe((response) => {
-     this.repositories = response
+     this.repositories = response.filter((repo => !repo.fork));
     });
   }
 
