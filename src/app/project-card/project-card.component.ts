@@ -6,7 +6,7 @@ import { Repository } from '../shared/models/repository.model'
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.css']
 })
-export class ProjectCardComponent implements OnInit {
+export class ProjectCardComponent{
   @Input("repository") repository: Repository;
 
   constructor() { }
