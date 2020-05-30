@@ -8,12 +8,12 @@ import { ErrorPageComponent } from "./error-page/error-page.component";
 import { AboutPageComponent } from "./about-page/about-page.component";
 
 const routes: Routes = [
-  { path:'', component: HomePageComponent},
-  { path:'error', component: ErrorPageComponent},
-  { path:'blog', component: BlogPageComponent},
-  { path:'contact', component: ContactPageComponent},
-  { path:'projects', component: ProjectsPageComponent},
-  { path:'about', component: AboutPageComponent},
+  { path:'', component: HomePageComponent, data: { animation: 'home' }},
+  { path:'error', component: ErrorPageComponent, data: { animation: 'error' }},
+  { path:'blog', component: BlogPageComponent, data: { animation: 'blog' }},
+  { path:'contact', component: ContactPageComponent, data: { animation: 'contact' }},
+  { path:'projects', component: ProjectsPageComponent, data: { animation: 'projects' }},
+  { path:'about', component: AboutPageComponent, data: { animation: 'about' }},
   { path:'**', component: ErrorPageComponent}
 ];
 

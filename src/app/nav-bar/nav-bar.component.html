@@ -1,11 +1,18 @@
-<nav class="navbar navbar-expand-sm justify-content-right">
+<nav class="navbar navbar-expand-md">
   <a class="navbar-brand" href="https://isaiahjohnson.dev"><img src="./assets/full-ij-logo.png" alt="Isaiah Johnson" width="150px"></a>
 
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item"> <a class="nav-link text-white" routerLink="" routerLinkActive="active">Home</a> </li>
-    <li class="nav-item"> <a class="nav-link text-white" routerLink="/about" routerLinkActive="active">About</a> </li>
-    <li class="nav-item"> <a class="nav-link text-white" routerLink="/projects" routerLinkActive="active">Projects</a> </li>
-    <li class="nav-item"> <a class="nav-link text-white" href="#" routerLinkActive="active">Blog</a> </li>
-    <li class="nav-item"> <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active">Contact</a> </li>
-  </ul>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"> <a class="nav-link text-white" routerLink="" routerLinkActive="active">Home</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white" routerLink="/about" routerLinkActive="active">About</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white" routerLink="/projects" routerLinkActive="active">Projects</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white" href="#" routerLinkActive="active">Blog</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active">Contact</a> </li>
+    </ul>
+  </div>
 </nav>
+
